@@ -33,12 +33,12 @@ import json
 
 
 ##sending sms
-conn = http.client.HTTPSConnection("mmy8xw.api.infobip.com")
+conn = http.client.HTTPSConnection("CLIENT CONNECTION LINK")
 def sendSMS(message):
      payload = json.dumps({
                 "messages": [
                     {
-                        "destinations": [{"to":"233599536083"}],
+                        "destinations": [{"to":"phone number"}],
                         "from": "ServiceSMS",
                         "text": message
                     }
@@ -51,7 +51,7 @@ def sendSMS(message):
                        
 
 headers = {
-    'Authorization': 'App c3f56a9705b74a9bb99fc6dd15e4799a-4c2b0b88-08fa-4c3b-8b6d-48896910b29f',
+    'Authorization': 'App API KEY',
     'Content-Type': 'application/json',
     'Accept': 'application/json'
 }
